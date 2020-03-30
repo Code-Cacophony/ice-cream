@@ -1,11 +1,20 @@
 var jCream = ["pistachio", "Pendleton whisky maple custard", "salted caramel", "peach"]
 var eCream = ["vanilla", "chocolate", "cookie dough", "cookies & cream"]
+var flavors = jCream.concat(eCream)
 
 $(document).ready(function(event){
-  let allCream = jCream.concat(eCream)  
   $("#flavorButton").submit(function(event){
-      $("#flavorList").show();
+    event.preventDefault();
+    flavors.forEach(function(flavor) {
+        $("#creamList").append("<li> flavor </li>");
 
-      event.preventDefault();
+
     });
-});
+   
+    $("#allTheFlavors").empty().append(flavors);
+    $("#flavorList").show();
+
+    });
+  
+  });
+
