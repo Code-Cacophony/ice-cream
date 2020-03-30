@@ -1,0 +1,15 @@
+#flavorList {
+  display: none;
+}
+
+body {
+    background-color: rgb(81, 205, 151);
+}
+
+p {
+    font-family: fantasy;
+}
+
+img {
+    width: 400px;
+}
